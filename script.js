@@ -1,3 +1,4 @@
+2
 function showPage(pageId) {
     document.querySelectorAll('.page-section').forEach(el => el.classList.add('d-none'));
     const selectedPage = document.getElementById('page-' + pageId);
