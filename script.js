@@ -41,11 +41,14 @@ function renderTasks() {
                 </div>
             </div>
         `;
-
-        if (task.status === 'todo') colTodo.innerHTML += cardHtml;
-        else if (task.status === 'progress') colProgress.innerHTML += cardHtml;
-        else if (task.status === 'done') colDone.innerHTML += cardHtml;
-    });
+    if (task.status === 'todo') {
+    colTodo.innerHTML += cardHtml;
+} else if (task.status === 'progress') {
+    colProgress.innerHTML += cardHtml;
+} else if (task.status === 'done') {
+    colDone.innerHTML += cardHtml;
+}
+      
 }
 
 function moveTask(id, direction) {
